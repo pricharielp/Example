@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("../Global/global.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-dark);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.main-content {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: var(--cream);
+  transition: width 0.3s ease;
+  width: calc(100% - 300px);
+  display: flex;
+}
+
+.main-content.full-width {
+  width: 100%;
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.section-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#calendar-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  flex: 1;
+}
+
+.calendar-header button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.calendar-header button:not(:disabled):hover {
+  background-color: var(--yellow);
+}
+
+.calendar-header button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.calendar-header h3 {
+  margin: 0;
+}
+
+.has-event {
+  position: relative;
+  font-weight: bold;
+}
+
+.event-indicator {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: var(--red);
+  border-radius: 50%;
+}
+
+.event-indicator.status-finished {
+  background-color: var(--green);
+}
+
+.event-indicator.status-cancelled {
+  background-color: var(--red);
+}
+
+.order-panel {
+  background-color: white;
+  border-radius: 15px;
+  padding: 70px;
+  box-shadow: var(--shadow);
+}
+
+.panel-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.order-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-card {
+  background-color: var(--yellow);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.order-card.status-finished {
+  background-color: var(--green);
+}
+
+.order-card.status-cancelled {
+  background-color: var(--red);
+}
+
+.client-image img {
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.order-details {
+  flex: 1;
+}
+
+.order-header {
+  margin-bottom: 5px;
+}
+
+.order-header h4 {
+  font-weight: 600;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-slot {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.info-btn {
+  background-color: var(--cream);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.calendar-dates div {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  margin: 5px;
+}
+
+.calendar-dates div:hover {
+  background-color: var(--yellow);
+}
+
+.prev-month-date,
+.next-month-date {
+  color: var(--text-light);
+}
+
+.main-progress-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  height: 20px;
+  width: 100%;
+  margin: 15px 0 25px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.main-progress-bar {
+  background-color: var(--green);
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+.main-progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: var(--text-dark);
+  font-weight: 600;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.9);
+}
+
+.selected-date {
+  background-color: var(--yellow) !important;
+  font-weight: bold;
+}
+
+.calendar-date {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  margin: 5px;
+}
+
+.calendar-date:hover {
+  background-color: var(--cream);
+}
+
+.order-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-finish,
+.btn-cancel {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-finish {
+  background-color: var(--green);
+  color: white;
+}
+
+.btn-cancel {
+  background-color: var(--red);
+  color: white;
+}
+
+.status-finished .btn-finish,
+.status-cancelled .btn-finish,
+.status-finished .btn-cancel,
+.status-cancelled .btn-cancel {
+  display: none;
+}

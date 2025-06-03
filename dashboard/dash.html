@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BabyVision</title>
+    <link rel="stylesheet" href="../dashboard/dashboardStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="dashboard-container"></div>
+
+      <div class="main-content">
+        <div id="sidebar-container"></div>
+        <div class="content">
+          <div class="column-section">
+            <div class="main-panel date-display">
+              <h2>Today's Date</h2>
+              <div class="current-date"></div>
+              <div class="current-time"></div>
+            </div>
+
+            <div class="main-panel schedule-container">
+              <h2>Current Schedule</h2>
+            </div>
+          </div>
+
+          <div class="tips-section">
+            <h3>Daily Tips</h3>
+            <div class="tips-grid">
+              <div class="tip-box sleep-tips" data-category="sleep">
+                <div class="tip-header">
+                  <div class="tip-icon">🛌</div>
+                  <h4>Baby Sleep</h4>
+                  <p>Tips for better baby sleep patterns</p>
+                </div>
+                <div class="tip-dropdown-content">
+                  <ul>
+                    <li>
+                      <span class="tip-icon-small">🏠</span> Stick to a routine
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">💡</span> Dim lights 1 hour
+                      before bedtime
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">📱</span> Avoid screens
+                      around sleep time
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">🎵</span> Use white noise or
+                      calming sounds
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">🧸</span> Keep a comfort
+                      object nearby
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tip-box nutrition-tips" data-category="nutrition">
+                <div class="tip-header">
+                  <div class="tip-icon">🥦</div>
+                  <h4>Nutrition</h4>
+                  <p>Healthy meal ideas for toddlers</p>
+                </div>
+                <div class="tip-dropdown-content">
+                  <ul>
+                    <li>
+                      <span class="tip-icon-small">🍎</span> Offer a variety of
+                      fruits and vegetables
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">🥛</span> Include protein and
+                      calcium sources
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">🥄</span> Keep portions
+                      appropriate for age
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">⏰</span> Maintain regular
+                      meal schedules
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">🧁</span> Limit sugar intake
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tip-box activities-tips" data-category="activities">
+                <div class="tip-header">
+                  <div class="tip-icon">🚼</div>
+                  <h4>Activities</h4>
+                  <p>Fun indoor activities for rainy days</p>
+                </div>
+                <div class="tip-dropdown-content">
+                  <ul>
+                    <li>
+                      <span class="tip-icon-small">🎨</span> Set up a simple art
+                      station
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">📚</span> Read stories with
+                      dramatic voices
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">🧩</span> Try age-appropriate
+                      puzzles
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">🏡</span> Build a blanket
+                      fort
+                    </li>
+                    <li>
+                      <span class="tip-icon-small">🎵</span> Have a dance party
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../Global/utils.js"></script>
+  <script src="../Global/scheduleSharing.js"></script>
+  <script src="../dashboard/dashboardJs.js"></script>
+  <script src="../Global/notif.js"></script>
+  <script src="../schedule/scheduleShare.js"></script>
+</html>

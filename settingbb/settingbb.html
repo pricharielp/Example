@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - BabyVision</title>
+    <link rel="stylesheet" href="setbbStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div id="dashboard-container"></div>
+
+        <div class="main-content">
+            <div id="sidebar-container"></div>
+
+            <div class="content">
+                <h2>Settings</h2>
+                
+                <div class="settings-section">
+                    <h3>Notifications</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Push Notifications</h4>
+                            <p>Receive push notifications for important alerts</p>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Email Notifications</h4>
+                            <p>Receive email notifications for weekly reports</p>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Sound Alerts</h4>
+                            <p>Play sound when notifications arrive</p>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h3>Appearance</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Theme</h4>
+                            <p>Choose your preferred theme</p>
+                        </div>
+                        <div class="setting-control">
+                            <select>
+                                <option>Light</option>
+                                <option>Dark</option>
+                                <option>System Default</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Text Size</h4>
+                            <p>Adjust the size of text</p>
+                        </div>
+                        <div class="setting-control">
+                            <select>
+                                <option>Small</option>
+                                <option selected>Medium</option>
+                                <option>Large</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h3>Privacy & Security</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Change Password</h4>
+                            <p>Update your account password</p>
+                        </div>
+                        <div class="setting-control">
+                            <button class="setting-btn">Change</button>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Two-Factor Authentication</h4>
+                            <p>Add an extra layer of security</p>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Data Sharing</h4>
+                            <p>Control how your data is shared</p>
+                        </div>
+                        <div class="setting-control">
+                            <button class="setting-btn">Manage</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3>Help & Support</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>FAQs</h4>
+                            <p>Frequently asked questions</p>
+                        </div>
+                        <div class="setting-control">
+                            <button class="setting-btn">View</button>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Contact Support</h4>
+                            <p>Get help from our support team</p>
+                        </div>
+                        <div class="setting-control">
+                            <button class="setting-btn">Contact</button>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Report a Bug</h4>
+                            <p>Help us improve by reporting issues</p>
+                        </div>
+                        <div class="setting-control">
+                            <button class="setting-btn">Report</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h3>About</h3>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Version</h4>
+                            <p>BabyVision v1.0.0</p>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Terms of Service</h4>
+                            <p>Read our terms and conditions</p>
+                        </div>
+                        <div class="setting-control">
+                            <button class="setting-btn">View</button>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h4>Privacy Policy</h4>
+                            <p>Learn how we protect your data</p>
+                        </div>
+                        <div class="setting-control">
+                            <button class="setting-btn">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../Global/utils.js"></script>
+<script src="setbbJs.js"></script>
+</html>

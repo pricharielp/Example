@@ -1,0 +1,280 @@
+@import url('../Global/global.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--cream);
+    background-color: var(--cream);
+    /* background-image: url('../Comp/babysitterBg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat; */
+}
+
+.logo-section img{
+    max-width: 50%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+header {
+    background-color: var(--yellow);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: var(--shadow);
+}
+
+.login-btn{
+    background-color: var(--blue);
+    color: white;
+}
+
+.register-btn{
+    background-color: var(--red);
+    color: white;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.logo-section{
+    text-align: center;
+    margin: 80px 0 60px;
+    padding: 40px 0;
+}
+
+.main-logo{
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.logo-section h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+.tagline{
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+}
+
+.cta-buttons{
+    margin-top: 30px;
+}
+
+.cta-btn{
+    background-color: var(--yellow);
+    color: var(--text-dark);
+    padding: 12px 28px;
+    font-size: 1.1rem;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon{
+    font-size: 2rem;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:nth-child(1) .card-icon{
+    background-color: var(--blue);
+}
+
+.card:nth-child(2) .card-icon{
+    background-color: var(--red);
+}
+
+.card:nth-child(3) .card-icon{
+    background-color: var(--yellow);
+    color: var(--text-dark);
+}
+
+.card h2{
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-list{
+    list-style: none;
+}
+
+.feature-list li{
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.feature-list li i{
+    margin-right: 10px;
+    color: var(--blue);
+}
+
+.user-group{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-group h3{
+    font-size: 1.2rem;
+    color: var(--red);
+    margin-bottom: 8px;
+}
+
+.user-group p{
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.benefits-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.benefit{
+    display: flex;
+    align-items: flex-start;
+}
+
+.benefit i{
+    color: var(--yellow);
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.benefit p{
+    font-size: 0.95rem;
+}
+
+footer{
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+footer p{
+    margin-bottom: 15px;
+    color: var(--text-light);
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a{
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover{
+    color: var(--red);
+}
+
+@media (max-width: 992px){
+    .cards-container{
+        grid-template-columns: 1fr;
+    }
+    
+    .card{
+        margin-bottom: 20px;
+    }
+    
+    .auth-buttons{
+        position: relative;
+        top: 0;
+        right: 0;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+    
+    .logo-section{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    .auth-buttons{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
+    
+    .logo-section h1{
+        font-size: 2.2rem;
+    }
+    
+    .footer-links{
+        flex-direction: column;
+        gap: 15px;
+    }
+}

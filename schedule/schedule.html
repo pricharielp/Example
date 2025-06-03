@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule - BabyVision</title>
+    <link rel="stylesheet" href="scheduleStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="dashboard-container"></div>
+
+      <div class="main-content">
+        <div id="sidebar-container"></div>
+
+        <div class="content">
+          <div class="schedule-container">
+            <div class="schedule-header">
+              <h3>Today's Schedule</h3>
+              <div class="action-buttons">
+                <button class="add-btn">Add</button>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+              </div>
+            </div>
+            <div class="schedule-card">
+              <div class="schedule-card-content">
+                <div class="schedule-time">11:00 - 13:00</div>
+                <div class="schedule-info">
+                  <h3>Playtime</h3>
+                  <div class="schedule-status">Upcoming</div>
+                </div>
+                <button class="done-btn">Mark Done</button>
+              </div>
+            </div>
+            <div class="schedule-card upcoming">
+              <div class="schedule-card-content">
+                <div class="schedule-time">13:00 - 16:00</div>
+                <div class="schedule-info">
+                  <h3>Nap Time</h3>
+                  <div class="schedule-status">Upcoming</div>
+                </div>
+                <button class="done-btn">Mark Done</button>
+              </div>
+            </div>
+            <div class="schedule-card upcoming">
+              <div class="schedule-card-content">
+                <div class="schedule-time">16:00 - 17:00</div>
+                <div class="schedule-info">
+                  <h3>Afternoon Bath</h3>
+                  <div class="schedule-status">Upcoming</div>
+                </div>
+                <button class="done-btn">Mark Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../Global/utils.js"></script>
+  <script src="../Global/scheduleSharing.js"></script>
+  <script src="scheduleJs.js"></script>
+  <script src="../Global/notif.js"></script>
+  <script src="../schedule/scheduleShare.js"></script>
+</html>

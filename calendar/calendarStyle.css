@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("../Global/global.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-dark);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.main-content {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: var(--cream);
+  transition: width 0.3s ease;
+  width: calc(100% - 300px);
+  display: flex;
+}
+
+.main-content.full-width {
+  width: 100%;
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.month-selector {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+}
+
+.month-selector h2 {
+  font-weight: 600;
+}
+
+.dropdown-arrow {
+  font-size: 20px;
+}
+
+.calendar-entries {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.calendar-entry {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 15px;
+  box-shadow: var(--shadow);
+  background-color: #fff;
+}
+
+.entry-date {
+  background-color: var(--yellow);
+  width: 120px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #eaeaea;
+}
+
+.day-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.day-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--red);
+}
+
+.entry-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.entry-client {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.entry-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.info-item i {
+  width: 20px;
+  color: var(--text-dark);
+}
+
+.date-header {
+  margin: 20px 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.date-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--blue-dark);
+}
+
+.date-header:not(:first-child) {
+  margin-top: 30px;
+}

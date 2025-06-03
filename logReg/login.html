@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabyVision - Login</title>
+    <link rel="stylesheet" href="../logReg/loginStyle.css">
+</head>
+<body>
+    <header>
+        <div class="auth-buttons">
+            <a href="../main.html" class="btn home-btn">Home</a>
+            <a href="../logReg/reg.html" class="btn register-btn">Register</a>
+        </div>
+    </header>
+    <div class="container login-container">
+        <div class="login-card">
+            <img src="../Comp/BabyVisionLogo.png" alt="BabyVision Logo" class="login-logo">
+            <h1>Login to BabyVision</h1>
+            
+            <form id="loginForm" action="dash.html">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="input-group role-selector">
+                    <label>I am a:</label>
+                    <div class="role-options">
+                        <div class="role-option">
+                            <input type="radio" id="parent" name="role" value="parent" checked>
+                            <label for="parent">Parent</label>
+                        </div>
+                        <div class="role-option">
+                            <input type="radio" id="babysitter" name="role" value="babysitter">
+                            <label for="babysitter">Babysitter</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn login-submit-btn">Login</button>
+            </form>
+            
+            <div class="login-footer">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <p>Don't have an account? <a href="../logReg/reg.html">Register</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginJs.js"></script>
+</body>
+</html>

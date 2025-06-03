@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messaging - BabyVision</title>
+    <link rel="stylesheet" href="msgbbStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="dashboard-container"></div>
+
+      <div class="main-content">
+        <div id="sidebar-container"></div>
+
+        <div class="content">
+          <div class="chat-container">
+            <div class="chat-list">
+              <div class="chat-item active">
+                <img src="../Comp/pfp.png" alt="User Photo" />
+                <div class="chat-info">
+                  <h4>Aiih</h4>
+                  <p>Yes, I am. What time do you need me?</p>
+                  <span class="timestamp">10:45 AM</span>
+                </div>
+              </div>
+              <div class="chat-item">
+                <img src="../Comp/pfp2.png" alt="User Photo" />
+                <div class="chat-info">
+                  <h4>John Smith</h4>
+                  <p>Thank you for your help!</p>
+                  <span class="timestamp">Yesterday</span>
+                </div>
+              </div>
+              <div class="chat-item">
+                <img src="../Comp/pfp3.png" alt="User Photo" />
+                <div class="chat-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>Can you work next weekend?</p>
+                  <span class="timestamp">2 days ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat-window">
+              <div class="chat-header">
+                <img src="../Comp/pfp.png" alt="User Photo" />
+                <h4>Aiih</h4>
+              </div>
+              <div class="chat-messages">
+                <div class="message received">
+                  <p>Hi! Are you available this weekend?</p>
+                  <span class="message-time">10:30 AM</span>
+                </div>
+
+                <div class="message sent">
+                  <p>Yes, I am. What time do you need me?</p>
+                  <span class="message-time">10:45 AM</span>
+                </div>
+              </div>
+              <div class="chat-input">
+                <input type="text" placeholder="Type a message..." />
+                <button>➤</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../Global/utils.js"></script>
+  <script src="msgbbJs.js"></script>
+  <script src="../Global/notifbb.js"></script>
+</html>

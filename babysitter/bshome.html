@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BabyVision</title>
+    <link rel="stylesheet" href="../babysitter/bsStyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="dashboard-container"></div>
+
+      <div class="main-content">
+        <div id="sidebar-container"></div>
+
+        <div class="content">
+          <div class="section-row">
+            <div class="order-panel">
+              <h2 class="panel-title">Your order</h2>
+              <div class="order-cards">
+                <div class="order-card" id="order-card-1">
+                  <div class="client-image">
+                    <img
+                      src="https://placeholder.pics/svg/60/FFD966/FFF/PP"
+                      alt="Pika Pika" />
+                  </div>
+                  <div class="order-details">
+                    <div class="order-header">
+                      <h4>Pika pika</h4>
+                    </div>
+                    <div class="order-info">
+                      <div class="order-date">10/05/2025</div>
+                      <div class="order-amount">Rp. 1.000.000</div>
+                    </div>
+                    <div class="order-time">
+                      <span class="time-slot">08.00-17.00</span>
+                      <button class="info-btn">Info</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="order-card" id="order-card-2">
+                  <div class="client-image">
+                    <img
+                      src="https://placeholder.pics/svg/60/89CFF0/FFF/KD"
+                      alt="Kodok" />
+                  </div>
+                  <div class="order-details">
+                    <div class="order-header">
+                      <h4>Kodok</h4>
+                    </div>
+                    <div class="order-info">
+                      <div class="order-date">12/05/2025</div>
+                      <div class="order-amount">Rp. 1.300.000</div>
+                    </div>
+                    <div class="order-time">
+                      <span class="time-slot">08.00-16.00</span>
+                      <button class="info-btn">Info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-progress-container">
+                <div class="main-progress-bar" style="width: 35%"></div>
+                <span class="main-progress-text">35% Complete</span>
+              </div>
+            </div>
+
+            <div class="order-panel">
+              <h2 class="panel-title">Calendar</h2>
+              <div id="calendar-container">
+                <div class="calendar-header">
+                  <button class="prev-month">❮</button>
+                  <h3>May 2025</h3>
+                  <button class="next-month">❯</button>
+                </div>
+                <div class="calendar-days">
+                  <div>Sun</div>
+                  <div>Mon</div>
+                  <div>Tue</div>
+                  <div>Wed</div>
+                  <div>Thu</div>
+                  <div>Fri</div>
+                  <div>Sat</div>
+                </div>
+                <div class="calendar-dates">
+                  <div class="prev-month-date">27</div>
+                  <div class="prev-month-date">28</div>
+                  <div class="prev-month-date">29</div>
+                  <div class="prev-month-date">30</div>
+                  <div class="calendar-date" data-date="2025-05-01">1</div>
+                  <div class="calendar-date" data-date="2025-05-02">2</div>
+                  <div class="calendar-date has-event" data-date="2025-05-03">
+                    3<span class="event-indicator"></span>
+                  </div>
+                  <div class="calendar-date" data-date="2025-05-04">4</div>
+                  <div class="calendar-date" data-date="2025-05-05">5</div>
+                  <div class="calendar-date" data-date="2025-05-06">6</div>
+                  <div class="calendar-date" data-date="2025-05-07">7</div>
+                  <div class="calendar-date" data-date="2025-05-08">8</div>
+                  <div class="calendar-date" data-date="2025-05-09">9</div>
+                  <div
+                    class="calendar-date has-event selected-date"
+                    data-date="2025-05-10">
+                    10<span class="event-indicator"></span>
+                  </div>
+                  <div class="calendar-date" data-date="2025-05-11">11</div>
+                  <div class="calendar-date has-event" data-date="2025-05-12">
+                    12<span class="event-indicator"></span>
+                  </div>
+                  <div class="calendar-date" data-date="2025-05-13">13</div>
+                  <div class="calendar-date" data-date="2025-05-14">14</div>
+                  <div class="calendar-date has-event" data-date="2025-05-15">
+                    15<span class="event-indicator"></span>
+                  </div>
+                  <div class="calendar-date" data-date="2025-05-16">16</div>
+                  <div class="calendar-date" data-date="2025-05-17">17</div>
+                  <div class="calendar-date" data-date="2025-05-18">18</div>
+                  <div class="calendar-date" data-date="2025-05-19">19</div>
+                  <div class="calendar-date" data-date="2025-05-20">20</div>
+                  <div class="calendar-date" data-date="2025-05-21">21</div>
+                  <div class="calendar-date has-event" data-date="2025-05-22">
+                    22<span class="event-indicator"></span>
+                  </div>
+                  <div class="calendar-date" data-date="2025-05-23">23</div>
+                  <div class="calendar-date" data-date="2025-05-24">24</div>
+                  <div class="calendar-date" data-date="2025-05-25">25</div>
+                  <div class="calendar-date" data-date="2025-05-26">26</div>
+                  <div class="calendar-date" data-date="2025-05-27">27</div>
+                  <div class="calendar-date" data-date="2025-05-28">28</div>
+                  <div class="calendar-date" data-date="2025-05-29">29</div>
+                  <div class="calendar-date" data-date="2025-05-30">30</div>
+                  <div class="calendar-date" data-date="2025-05-31">31</div>
+                  <div class="next-month-date">1</div>
+                  <div class="next-month-date">2</div>
+                  <div class="next-month-date">3</div>
+                  <div class="next-month-date">4</div>
+                  <div class="next-month-date">5</div>
+                  <div class="next-month-date">6</div>
+                  <div class="next-month-date">7</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../Global/utils.js"></script>
+  <script src="../babysitter/bsJs.js"></script>
+  <script src="../babysitter/eventJs.js"></script>
+  <script src="../Global/notifbb.js"></script>
+</html>
